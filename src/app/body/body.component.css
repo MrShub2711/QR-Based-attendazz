@@ -1,3 +1,5 @@
+/* Common styles */
+
 .main .left h1 {
     color: black;
 }
@@ -5,12 +7,10 @@
 .root {
     background: rgb(155, 136, 208);
     background: linear-gradient(38deg, rgba(155, 136, 208, 0.7822479333530288) 31%, rgba(255, 255, 255, 0) 100%);
-
 }
 
 .main {
     padding-top: 5rem;
-    /* background-color: black; */
 }
 
 .QrImg {
@@ -21,7 +21,6 @@
 }
 
 .main .app {
-
     /* Size and position */
     width: 150px;
     height: 50px;
@@ -41,15 +40,12 @@
     background: #fd5f15e1;
     line-height: 35px;
     transition: #fd5f15e1 0.3s ease-in-out;
-
 }
 
 /* Add a hover effect */
 .main .app:hover {
-
     background: rgb(255, 94, 0);
     transition: #fd5f15e1 0.3s ease;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
 }
 
@@ -159,22 +155,75 @@ hr {
     align-items: center;
 }
 
-/* Responsive */
+/* Responsive styles */
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
+    .QrImg {
+        width: 100%;
+    }
 
-    .left,
-    .QrImg,
-    .main,
-    .text,
-    .services {
-        font-size: small;
+    .main .app {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .form {
+        margin-top: 5vh;
+    }
+
+    #submit {
+        width: 60%;
+        margin: 1em 0;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .main .left h1 {
+        font-size: 24px;
+    }
+
+    .main .app {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .form {
+        margin-top: 2vh;
+    }
+
+    #submit {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main .left h1 {
+        font-size: 20px;
+    }
+
+    .main .app {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .form {
+        margin-top: 1vh;
+    }
+
+    #submit {
+        width: 90%;
+    }
+}
+
+/* Footer styles (assuming a mobile-friendly layout) */
+
 #footer {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background-color: #343434;
     color: white;
