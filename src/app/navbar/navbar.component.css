@@ -166,57 +166,89 @@ span {
 /* Responsive */
 
 
-@media (max-width:1350px) {
-
+@media (max-width: 1350px) {
     .navbar-menu ul {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
-
-}
-
-@media (max-width: 1200px) {
-    nav {
-        background: rgb(0, 0, 0);
-        background: linear-gradient(305deg, rgba(0, 0, 0, 0.8130602582830007) 100%, rgba(17, 15, 15, 0.37888658881521353) 100%);
-        display: flex;
-        align-items: center;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        width: 100%;
-        justify-content: space-around;
-        z-index: 100;
-        backdrop-filter: blur(20px);
-        max-height: 10vh;
+  }
+  
+  @media (max-width: 850px) {
+    .nav {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        305deg,
+        rgba(0, 0, 0, 0.8130602582830007) 100%,
+        rgba(17, 15, 15, 0.37888658881521353) 100%
+      );
+      display: flex;
+      align-items: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      justify-content: space-around;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+      max-height: 10vh;
     }
-
+  .services{
+    flex-direction: column;
+  }
     .hamburger-button {
-        display: none;
+      display: none;
     }
-
+  }
+  
+  @media (max-width: 600px) {
+nav{
+    height: auto;
 }
-
-@media (max-width:750px) {
+.image{
+    display: flex;
+    margin-top: 7%;
+    align-items: center;
+    flex-direction: column;
+}
 
     .navbar-buttons {
-        display: none;
+        gap: 22px;
+        display: grid;
+        justify-items: stretch;
+        align-content: space-evenly;
     }
-
-
+  
     .hamburger-button {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 2rem;
-        margin-right: 5vw;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 2rem;
+      margin-right: 5vw;
     }
-
+  
     #hidden-navbar-menu {
-        position: relative;
-        flex: 50%;
-        display: flex;
-        max-height: 20vh;
-        width: 100%;
+      position: relative;
+      flex: 50%;
+      display: flex;
+      max-height: 20vh;
+      width: 100%;
     }
-
-}
+  
+    .navbar-menu {
+      flex: 1;
+    }
+  
+    .services{
+        display: flex;
+        flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .navbar-menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul li a {
+      padding: 10px 0;
+    }
+  }

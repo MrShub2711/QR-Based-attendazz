@@ -65,6 +65,10 @@ span {
     color: chocolate;
 }
 
+.footer{
+    justify-content: space-between;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -224,6 +228,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #343434;
     color: white;
