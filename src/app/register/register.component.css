@@ -1,0 +1,99 @@
+.register-form {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.2em;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    color: #333;
+}
+
+form input:focus {
+    border-color: #666;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0062cc;
+}
+
+form .radio-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+form .radio-group label {
+    margin-right: 20px;
+    color: #555;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .radio-group label:hover {
+    color: #007bff;
+}
+
+form .radio-group input[type="radio"] {
+    display: none;
+}
+
+form .radio-group input[type="radio"]:checked+label {
+    color: #007bff;
+}
+
+form .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+form .fade-in.show {
+    opacity: 1;
+}

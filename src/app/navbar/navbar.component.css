@@ -1,0 +1,222 @@
+nav {
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9335084375547094) 11%, rgba(255, 255, 255, 0.37888658881521353) 100%);
+    background: rgb(135, 109, 152);
+    background: radial-gradient(circle, rgba(135, 109, 152, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(89, 55, 8, 1) 100%);
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    height: 10vh;
+}
+
+.navbar-brand {
+    flex: 25%;
+    padding: 0 0 0 1.5vw;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    color: aliceblue;
+}
+
+.hero {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+.navbar-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu ul li a:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+ul li a:active {
+    background-color: #ff5733;
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-buttons {
+    flex: 25%;
+    padding: 3vh;
+    position: absolute;
+    max-height: 10vh;
+    min-height: fit-content;
+    right: 0;
+    display: flex;
+}
+
+span {
+    color: rgb(123, 47, 0);
+}
+
+
+.SignIn:hover {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    transition: 200ms all ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger-button {
+    flex: 25%;
+    max-height: 10vh;
+    display: none;
+    min-height: fit-content;
+}
+
+.hamburger {
+    border: none;
+    border-radius: 5px;
+}
+
+.SignIn {
+    background-color: #563d7c;
+
+    border-radius: 30px;
+    color: #d1cccc;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.register {
+    background-color: #563d7c;
+    border-radius: 30px;
+    margin-right: 10px;
+    color: #d1cccc;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.register:hover {
+    background-color: #fff;
+    color: #b35419;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.register:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.SignIn:hover {
+    background-color: #fff;
+    color: #b35419;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.SignIn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/* Responsive */
+
+
+@media (max-width:1350px) {
+
+    .navbar-menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    nav {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(305deg, rgba(0, 0, 0, 0.8130602582830007) 100%, rgba(17, 15, 15, 0.37888658881521353) 100%);
+        display: flex;
+        align-items: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+        z-index: 100;
+        backdrop-filter: blur(20px);
+        max-height: 10vh;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+}
+
+@media (max-width:750px) {
+
+    .navbar-buttons {
+        display: none;
+    }
+
+
+    .hamburger-button {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        margin-right: 5vw;
+    }
+
+    #hidden-navbar-menu {
+        position: relative;
+        flex: 50%;
+        display: flex;
+        max-height: 20vh;
+        width: 100%;
+    }
+
+}
