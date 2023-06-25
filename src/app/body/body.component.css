@@ -282,6 +282,10 @@ hr {
         margin: 1em 0;
     }
 
+    .services{
+        flex-direction: column;
+    }
+
     .image {
         margin-top: 10%;
         flex-direction: column;
