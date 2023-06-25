@@ -244,3 +244,57 @@ hr {
 .github {
     font-size: 2rem;
 }
+
+/* Responsive styles for screens below 600px */
+
+@media only screen and (max-width: 600px) {
+    .root {
+        background: linear-gradient(38deg, rgba(155, 136, 208, 0.7822479333530288) 31%, rgba(255, 255, 255, 0) 70%);
+    }
+
+    .main {
+        padding-top: 2rem;
+    }
+
+    .QrImg {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .main .app {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .form {
+        margin-top: 5vh;
+        padding: 3%;
+    }
+
+    #submit {
+        width: 70%;
+        margin: 1em 0;
+    }
+
+    .image {
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+    .hands {
+        height: auto;
+        width: 100%;
+    }
+
+    hr {
+        margin: 8vh 0 7vh 5vh;
+    }
+
+    #services-we-provide {
+        height: 30vh;
+        width: 80vw;
+        border-radius: 35px;
+        object-fit: cover;
+    }
+}
